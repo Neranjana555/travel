@@ -1,0 +1,26 @@
+const { chromium } = require('C:/Users/HP/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+const fs = require('node:fs/promises');
+(async()=>{
+ const browser=await chromium.launch({executablePath:'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',headless:true});
+ const page=await browser.newPage({viewport:{width:1440,height:1000}});const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ await page.goto('http://127.0.0.1:8080/',{waitUntil:'domcontentloaded'});
+ await page.screenshot({path:'storage/desktop.png',fullPage:true});
+ await page.goto('http://127.0.0.1:8080/admin.php',{waitUntil:'domcontentloaded'});
+ await page.locator('[name=username]').fill('admin');await page.locator('[name=password]').fill('Travenzo@2026!');await Promise.all([page.waitForURL('**/admin.php'),page.getByRole('button',{name:'Sign in',exact:true}).click()]);
+ await page.goto('http://127.0.0.1:8080/admin.php?tab=content',{waitUntil:'domcontentloaded'});
+ await page.locator('#edit-home summary').click(); const heading=page.locator('#edit-home input[name^="field"]').first();const original=await heading.inputValue();await heading.fill('Sri Lanka browser verification');
+ await page.locator('#edit-home button').click();await page.waitForLoadState('domcontentloaded');
+ const publicPage=await browser.newPage();await publicPage.goto('http://127.0.0.1:8080/',{waitUntil:'domcontentloaded'});if(await publicPage.locator('h1').textContent()!=='Sri Lanka browser verification')throw new Error('Data update did not reach the public site');
+ await page.locator('#edit-home summary').click();await page.locator('#edit-home input[name^="field"]').first().fill(original);await page.locator('#edit-home button').click();await page.waitForLoadState('domcontentloaded');
+ await page.locator('#edit-gallery summary').click();const photo=page.locator('#edit-gallery .photo-field').first();const originalPhoto=await photo.locator('input[name^="field"]').inputValue();const fieldName=await photo.locator('input[name^="field"]').getAttribute('name');
+ await photo.locator('input[type=file]').setInputFiles('assets/ten-day-tour.jpeg');await page.locator('#edit-gallery button').click();await page.waitForLoadState('domcontentloaded');await page.locator('#edit-gallery summary').click();const uploaded=await page.locator(`#edit-gallery input[name="${fieldName}"]`).inputValue();if(!uploaded.startsWith('assets/uploads/'))throw new Error('Photo upload failed');
+ await page.locator(`#edit-gallery input[name="${fieldName}"]`).fill(originalPhoto);await page.locator('#edit-gallery button').click();await page.waitForLoadState('domcontentloaded');await fs.unlink(uploaded);
+ await page.goto('http://127.0.0.1:8080/admin.php?tab=tours',{waitUntil:'domcontentloaded'});const editor=page.locator('.tour-editor').first();const count=await editor.locator('.editable-day').count();await editor.getByRole('button',{name:'Add a day',exact:true}).click();const newDay=editor.locator('.editable-day').last();await newDay.locator('input').fill('Verification destination');await newDay.locator('textarea').fill('Verification activity');await editor.getByRole('button',{name:'Save tour plan'}).click();await page.waitForLoadState('domcontentloaded');if(await page.locator('.tour-editor').first().locator('.editable-day').count()!==count+1)throw new Error('Tour add/save failed');
+ await page.locator('.tour-editor').first().locator('.editable-day').last().getByRole('button',{name:'Remove day'}).click();await page.locator('.tour-editor').first().getByRole('button',{name:'Save tour plan'}).click();await page.waitForLoadState('domcontentloaded');
+ await page.setViewportSize({width:390,height:844});await page.screenshot({path:'storage/admin-mobile.png',fullPage:true});let adminOverflow=await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth);
+ await page.goto('http://127.0.0.1:8080/',{waitUntil:'domcontentloaded'});await page.screenshot({path:'storage/mobile.png',fullPage:true});await page.screenshot({path:'storage/mobile-top.png'});let mobileOverflow=await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth);
+ await page.getByRole('button',{name:'Open navigation'}).click();if(await page.locator('#hamburger').getAttribute('aria-expanded')!=='true')throw new Error('Mobile menu did not open');await page.locator('#nav-menu a[href="#tour-plan"]').click();await page.getByRole('button',{name:'10-Day Sri Lanka Journey',exact:true}).click();if(!await page.locator('#tour-2').isVisible())throw new Error('Tour switch failed');
+ await page.setViewportSize({width:320,height:740});const smallOverflow=await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth);
+ await page.goto('http://127.0.0.1:8080/reviews.php',{waitUntil:'domcontentloaded'});const reviewsOverflow=await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth);
+ console.log(JSON.stringify({dataSave:true,photoUpload:true,tourAddRemove:true,mobileMenu:true,tourSwitch:true,adminOverflow,mobileOverflow,smallOverflow,reviewsOverflow,errors},null,2));await browser.close();
+})().catch(e=>{console.error(e);process.exit(1)});
