@@ -1,0 +1,182 @@
+{
+    "content": {
+        "home": "<section id=\"home\" class=\"hero\">\n        <div class=\"hero-slider active\" style=\"background-image: url('https://images.unsplash.com/photo-1601581875309-fafbf2d3ed3a?auto=format&fit=crop&w=1600&q=80');\"></div>\n        <div class=\"hero-slider\" style=\"background-image: url('https://images.unsplash.com/photo-1540202404-1b927e27fa8b?auto=format&fit=crop&w=1600&q=80');\"></div>\n        <div class=\"hero-slider\" style=\"background-image: url('https://images.unsplash.com/photo-1573790387438-4da905039392?auto=format&fit=crop&w=1600&q=80');\"></div>\n        <div class=\"hero-slider\" style=\"background-image: url('https://images.unsplash.com/photo-1601581875039-f1b9b1d37076?auto=format&fit=crop&w=1600&q=80');\"></div>\n        <div class=\"hero-overlay\">\n            <div class=\"hero-content fade-up\">\n                <h1>Discover the Beauty of Sri Lanka</h1>\n                <p>Luxury Private Tours • Wildlife Safaris • Ancient Heritage • Tea Country • Beaches</p>\n                <div class=\"hero-buttons\">\n                    <a href=\"#packages\" class=\"btn-primary\">View Packages</a>\n                    <a href=\"#contact\" class=\"btn-secondary\">Book Your Tour</a>\n                </div>\n            </div>\n        </div>\n        <div class=\"scroll-down-indicator\"><a href=\"#about\"><span></span>Scroll</a></div>\n    </section>",
+        "about": "<section id=\"about\" class=\"section-padding\">\n        <div class=\"container\">\n            <div class=\"section-header\">\n                <span class=\"sub-title\">Welcome to Travenzo</span>\n                <h2>Luxury Sri Lankan Journeys</h2>\n            </div>\n            <div class=\"about-content\">\n                <div class=\"about-text fade-up\"><p>We specialize in unforgettable, bespoke private tours across Sri Lanka. From ancient heritage sites and breathtaking mountains to wildlife safaris and tropical beaches, we provide highly personalized experiences with premium transport, handpicked luxury hotels, and dedicated local service.</p></div>\n                <div class=\"about-image fade-up\"><img src=\"https://images.unsplash.com/photo-1540202404-1b927e27fa8b?auto=format&fit=crop&w=800&q=80\" alt=\"Sri Lanka Tropical Luxury\" loading=\"lazy\"></div>\n            </div>\n            <div class=\"why-choose-us\">\n                <h3>Why Travel With Us</h3>\n                <div class=\"features-grid\">\n                    <div class=\"feature-card fade-up\"><i class=\"fas fa-plane-arrival\"></i><h4>Airport Pickup</h4></div><div class=\"feature-card fade-up\"><i class=\"fas fa-hotel\"></i><h4>Premium Hotels</h4></div><div class=\"feature-card fade-up\"><i class=\"fas fa-car\"></i><h4>Private Vehicle</h4></div><div class=\"feature-card fade-up\"><i class=\"fas fa-user-tie\"></i><h4>Expert Driver Guide</h4></div><div class=\"feature-card fade-up\"><i class=\"fas fa-paw\"></i><h4>Wildlife Safaris</h4></div><div class=\"feature-card fade-up\"><i class=\"fas fa-concierge-bell\"></i><h4>Personalized Service</h4></div><div class=\"feature-card fade-up\"><i class=\"fas fa-gem\"></i><h4>Exclusive Access</h4></div><div class=\"feature-card fade-up\"><i class=\"fas fa-headset\"></i><h4>24/7 Concierge</h4></div>\n                </div>\n            </div>\n        </div>\n    </section>",
+        "packages": "<section id=\"packages\" class=\"section-padding bg-light\">\n        <div class=\"container\">\n            <div class=\"section-header\">\n                <span class=\"sub-title\">Curated For You</span>\n                <h2>Exclusive Tour Packages</h2>\n                <p>Choose the perfect tier for your luxury escape</p>\n            </div>\n            <div class=\"packages-grid\">\n                <div class=\"package-card gold fade-up\">\n                    <div class=\"package-header\"><h3>Gold Package</h3></div>\n                    <div class=\"package-pricing\">\n                        <div class=\"price-tier\"><span>2 Persons</span><strong>$1150</strong></div><div class=\"price-tier\"><span>4 Persons</span><strong>$1550</strong></div><div class=\"price-tier\"><span>6 Persons</span><strong>$1750</strong></div>\n                    </div>\n                    <ul class=\"package-includes\">\n                        <li><i class=\"fas fa-check\"></i> Airport Pickup</li><li><i class=\"fas fa-check\"></i> Hotel Accommodation</li><li><i class=\"fas fa-check\"></i> Private Transport</li><li><i class=\"fas fa-check\"></i> Safari</li><li><i class=\"fas fa-check\"></i> Sightseeing</li><li><i class=\"fas fa-check\"></i> Breakfast</li>\n                    </ul>\n                    <a href=\"#contact\" class=\"btn-outline\">Book Gold Package</a>\n                </div>\n                <div class=\"package-card premium fade-up\">\n                    <div class=\"package-badge\">Best Value</div>\n                    <div class=\"package-header\"><h3>Premium Package</h3></div>\n                    <div class=\"package-pricing\">\n                        <div class=\"price-tier\"><span>2 Persons</span><strong>$1850</strong></div><div class=\"price-tier\"><span>4 Persons</span><strong>$2150</strong></div><div class=\"price-tier\"><span>6 Persons</span><strong>$2450</strong></div>\n                    </div>\n                    <ul class=\"package-includes\">\n                        <li><i class=\"fas fa-check\"></i> Luxury Hotels</li><li><i class=\"fas fa-check\"></i> Luxury Vehicle</li><li><i class=\"fas fa-check\"></i> Airport Transfer</li><li><i class=\"fas fa-check\"></i> Safari</li><li><i class=\"fas fa-check\"></i> Breakfast</li><li><i class=\"fas fa-check\"></i> Private Guide</li>\n                    </ul>\n                    <a href=\"#contact\" class=\"btn-primary\">Book Premium Package</a>\n                </div>\n            </div>\n        </div>\n    </section>",
+        "destinations": "<section id=\"destinations\" class=\"section-padding bg-light\">\n        <div class=\"container\">\n            <div class=\"section-header\">\n                <span class=\"sub-title\">The Experience</span>\n                <h2>Popular Destinations</h2>\n                <p>Explore the wonders of the Pearl of the Indian Ocean</p>\n            </div>\n            <div class=\"destinations-grid\">\n                <div class=\"destination-card fade-up\"><img src=\"https://z-cdn-media.chatglm.cn/files/7b1f19f8-4290-4f7e-a799-57e5c02e64e4.png?auth_key=1885316737-c8dfe0075cad47e993e78cd4cab32c6c-0-058b2f7bf07f5c013f50f08a2b86b591\" class=\"floating-photo\" alt=\"Temple of the Tooth\" loading=\"lazy\"><div class=\"destination-info\"><h3>Temple of the Tooth</h3><p>Sacred Buddhist temple in Kandy.</p><a href=\"#\" class=\"read-more\">Read More</a></div></div>\n                <div class=\"destination-card fade-up\"><img src=\"https://z-cdn-media.chatglm.cn/files/6ad853c1-3645-4701-83f4-2eb4e397aa7c.png?auth_key=1885316737-b80762186266480cb0e91d5369fa639e-0-f5d92a6a769c2d8e2bb9666745a60fde\" class=\"floating-photo\" alt=\"Ambuluwawa Tower\" loading=\"lazy\"><div class=\"destination-info\"><h3>Ambuluwawa Tower</h3><p>Multi-religious tower with panoramic views.</p><a href=\"#\" class=\"read-more\">Read More</a></div></div>\n                <div class=\"destination-card fade-up\"><img src=\"https://z-cdn-media.chatglm.cn/files/3f004da5-dcd4-4280-bc3e-4f888964e91d.png?auth_key=1885316737-dad52fecaf6246368c9a09bd16ab91b9-0-b3594cd7701f55eb57bc7002f1b71fb1\" class=\"floating-photo\" alt=\"Nine Arch Bridge\" loading=\"lazy\"><div class=\"destination-info\"><h3>Nine Arch Bridge</h3><p>Iconic colonial-era railway bridge in Ella.</p><a href=\"#\" class=\"read-more\">Read More</a></div></div>\n                <div class=\"destination-card fade-up\"><img src=\"https://z-cdn-media.chatglm.cn/files/aab4e411-127e-4e56-a79d-191fa8b1c077.png?auth_key=1885316737-cdcaee84441e490f8e52641926ea512d-0-fc5711082e23729dc575e4937de18ee0\" class=\"floating-photo\" alt=\"Lipton's Seat\" loading=\"lazy\"><div class=\"destination-info\"><h3>Lipton's Seat</h3><p>Famous viewpoint overlooking tea estates.</p><a href=\"#\" class=\"read-more\">Read More</a></div></div>\n                <div class=\"destination-card fade-up\"><img src=\"https://z-cdn-media.chatglm.cn/files/4e808f69-a3db-47e4-ac39-db6ae738ce31.png?auth_key=1885316737-e1734f5d9c7c4c8a86ee795a78b374c2-0-97bdb9988a6b4b93a0c8f3605adda742\" class=\"floating-photo\" alt=\"Diyaluma Falls\" loading=\"lazy\"><div class=\"destination-info\"><h3>Diyaluma Falls</h3><p>Second highest waterfall in Sri Lanka.</p><a href=\"#\" class=\"read-more\">Read More</a></div></div>\n                <div class=\"destination-card fade-up\"><img src=\"https://images.unsplash.com/photo-1549366021-9f761d450615?auto=format&fit=crop&w=600&q=80\" class=\"floating-photo\" alt=\"Yala National Park Elephants\" loading=\"lazy\"><div class=\"destination-info\"><h3>Yala National Park</h3><p>Premier destination for leopard and elephant safaris.</p><a href=\"#\" class=\"read-more\">Read More</a></div></div>\n                <div class=\"destination-card fade-up\"><img src=\"https://z-cdn-media.chatglm.cn/files/3e97181f-a952-4675-8ce8-df7ea42f850f.png?auth_key=1885316737-9f5a8d84e440423398c446742c91e7d6-0-f11c1d0dd7da5998eec2bb00aea5c7e8\" class=\"floating-photo\" alt=\"Mirissa Coconut Tree Hill\" loading=\"lazy\"><div class=\"destination-info\"><h3>Mirissa Coconut Tree Hill</h3><p>Insta-famous tropical cliffside spot.</p><a href=\"#\" class=\"read-more\">Read More</a></div></div>\n                <div class=\"destination-card fade-up\"><img src=\"https://z-cdn-media.chatglm.cn/files/72594d5d-b48b-4992-b13a-97ea2fae23ca.png?auth_key=1885316737-0349a49635964da493ee772c89dd4b20-0-063c083bd7dbd92bc22ee801bdb06f40\" class=\"floating-photo\" alt=\"Galle Fort\" loading=\"lazy\"><div class=\"destination-info\"><h3>Galle Fort</h3><p>Historic Dutch fort with charming streets.</p><a href=\"#\" class=\"read-more\">Read More</a></div></div>\n                <div class=\"destination-card fade-up\"><img src=\"https://z-cdn-media.chatglm.cn/files/f6eb297f-237a-405f-826b-02df41ed4467.png?auth_key=1885316737-d1a6d4b8782941259c5daadf34f78b93-0-f6cf35dfd630a575357b6dda1084e777\" class=\"floating-photo\" alt=\"Unawatuna Beach\" loading=\"lazy\"><div class=\"destination-info\"><h3>Unawatuna Beach</h3><p>Pristine beach perfect for relaxation.</p><a href=\"#\" class=\"read-more\">Read More</a></div></div>\n            </div>\n        </div>\n    </section>",
+        "gallery": "<section id=\"gallery\" class=\"section-padding\">\n        <div class=\"container\">\n            <div class=\"section-header\">\n                <span class=\"sub-title\">Visual Journey</span>\n                <h2>Gallery</h2>\n                <p>A glimpse of what awaits you</p>\n            </div>\n            <div class=\"gallery-grid\">\n                <div class=\"gallery-item fade-up\"><img src=\"https://z-cdn-media.chatglm.cn/files/7b1f19f8-4290-4f7e-a799-57e5c02e64e4.png?auth_key=1885316737-c8dfe0075cad47e993e78cd4cab32c6c-0-058b2f7bf07f5c013f50f08a2b86b591\" alt=\"Temple of the Tooth\" loading=\"lazy\"></div>\n                <div class=\"gallery-item fade-up\"><img src=\"https://z-cdn-media.chatglm.cn/files/6ad853c1-3645-4701-83f4-2eb4e397aa7c.png?auth_key=1885316737-b80762186266480cb0e91d5369fa639e-0-f5d92a6a769c2d8e2bb9666745a60fde\" alt=\"Ambuluwawa Tower\" loading=\"lazy\"></div>\n                <div class=\"gallery-item fade-up\"><img src=\"https://z-cdn-media.chatglm.cn/files/3f004da5-dcd4-4280-bc3e-4f888964e91d.png?auth_key=1885316737-dad52fecaf6246368c9a09bd16ab91b9-0-b3594cd7701f55eb57bc7002f1b71fb1\" alt=\"Nine Arch Bridge\" loading=\"lazy\"></div>\n                <div class=\"gallery-item fade-up\"><img src=\"https://z-cdn-media.chatglm.cn/files/aab4e411-127e-4e56-a79d-191fa8b1c077.png?auth_key=1885316737-cdcaee84441e490f8e52641926ea512d-0-fc5711082e23729dc575e4937de18ee0\" alt=\"Lipton's Seat View\" loading=\"lazy\"></div>\n                <div class=\"gallery-item fade-up\"><img src=\"https://z-cdn-media.chatglm.cn/files/4e808f69-a3db-47e4-ac39-db6ae738ce31.png?auth_key=1885316737-e1734f5d9c7c4c8a86ee795a78b374c2-0-97bdb9988a6b4b93a0c8f3605adda742\" alt=\"Diyaluma Falls\" loading=\"lazy\"></div>\n                <div class=\"gallery-item fade-up\"><img src=\"https://images.unsplash.com/photo-1549366021-9f761d450615?auto=format&fit=crop&w=600&q=80\" alt=\"Yala National Park Elephants\" loading=\"lazy\"></div>\n                <div class=\"gallery-item fade-up\"><img src=\"https://z-cdn-media.chatglm.cn/files/3e97181f-a952-4675-8ce8-df7ea42f850f.png?auth_key=1885316737-9f5a8d84e440423398c446742c91e7d6-0-f11c1d0dd7da5998eec2bb00aea5c7e8\" alt=\"Mirissa Coconut Tree Hill\" loading=\"lazy\"></div>\n                <div class=\"gallery-item fade-up\"><img src=\"https://z-cdn-media.chatglm.cn/files/72594d5d-b48b-4992-b13a-97ea2fae23ca.png?auth_key=1885316737-0349a49635964da493ee772c89dd4b20-0-063c083bd7dbd92bc22ee801bdb06f40\" alt=\"Galle Fort Lighthouse\" loading=\"lazy\"></div>\n                <div class=\"gallery-item fade-up\"><img src=\"https://z-cdn-media.chatglm.cn/files/f6eb297f-237a-405f-826b-02df41ed4467.png?auth_key=1885316737-d1a6d4b8782941259c5daadf34f78b93-0-f6cf35dfd630a575357b6dda1084e777\" alt=\"Unawatuna Beach\" loading=\"lazy\"></div>\n            </div>\n        </div>\n    </section>",
+        "contact": "<section id=\"contact\" class=\"section-padding bg-light\">\n        <div class=\"container\">\n            <div class=\"section-header\">\n                <span class=\"sub-title\">Get In Touch</span>\n                <h2>Contact Us</h2>\n                <p>We'd love to hear from you</p>\n            </div>\n            <div class=\"contact-wrapper\">\n                <div class=\"contact-info fade-up\">\n                    <h3>Travenzo Travels Sri Lanka</h3>\n                    <ul>\n                        <li><i class=\"fas fa-map-marker-alt\"></i> 342 Ekamuthu Mawatha, Battaramulla, Colombo, Sri Lanka</li>\n                        <li><i class=\"fab fa-whatsapp\"></i> +94 75 406 7529</li>\n                        <li><i class=\"fas fa-envelope\"></i> travenzotravels@gmail.com</li>\n                    </ul>\n                    <div class=\"contact-socials\">\n                        <a href=\"https://www.facebook.com/profile.php?id=61591970706490\" target=\"_blank\"><i class=\"fab fa-facebook-f\"></i></a>\n                        <a href=\"https://www.instagram.com/travenzo_travels_srilanka\" target=\"_blank\"><i class=\"fab fa-instagram\"></i></a>\n                        <a href=\"https://wa.me/94754067529\" target=\"_blank\"><i class=\"fab fa-whatsapp\"></i></a>\n                    </div>\n                    <div class=\"map-embed\">\n                        <iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.1148309346566!2d79.92049151477184!3d6.897092695020389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae250aa4d2f0683%3A0x7c58d1b7b2f0f0b5!2sBattaramulla!5e0!3m2!1sen!2slk!4v1644339755654!5m2!1sen!2slk\" width=\"100%\" height=\"250\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\"></iframe>\n                    </div>\n                </div>\n                <div class=\"contact-form fade-up\">\n                    <form id=\"bookingForm\">\n                        <div class=\"form-group\"><input type=\"text\" id=\"name\" name=\"name\" placeholder=\"Your Name\" required></div>\n                        <div class=\"form-group\"><input type=\"email\" id=\"email\" name=\"email\" placeholder=\"Your Email\" required></div>\n                        <div class=\"form-group\"><input type=\"text\" id=\"phone\" name=\"phone\" placeholder=\"Your Phone Number\" required></div>\n                        <div class=\"form-group\"><textarea id=\"message\" name=\"message\" rows=\"5\" placeholder=\"Your Message / Tour Requirements\" required></textarea></div>\n                        <button type=\"submit\" class=\"btn-primary\">Send Message</button>\n                        <p id=\"form-message\"></p>\n                    </form>\n                </div>\n            </div>\n        </div>\n    </section>"
+    },
+    "tours": [
+        {
+            "id": 1,
+            "title": "8-Day Luxury Tour",
+            "description": "The original private journey through heritage, tea country, wildlife and the coast.",
+            "prices": [],
+            "days": [
+                {
+                    "location": "Airport to Negombo",
+                    "activities": [
+                        "Airport Pickup",
+                        "Muthurajawela Boat Safari",
+                        "Check-in: Goddess Garden Hotel / Fresco Water Villa"
+                    ]
+                },
+                {
+                    "location": "Sigiriya & Dambulla",
+                    "activities": [
+                        "Dambulla Cave Temple",
+                        "Sigiriya Rock Fortress",
+                        "Hiriwadunna Village Tour",
+                        "Pidurangala Rock",
+                        "Check-in: Goddess Garden Hotel / Fresco Water Villa"
+                    ]
+                },
+                {
+                    "location": "Kandy",
+                    "activities": [
+                        "Minneriya National Park Safari",
+                        "Matale Spice Garden & Hindu Temple",
+                        "Temple of the Tooth & Kandy Lake",
+                        "Kandy Cultural Dance Show",
+                        "Check-in: Kandy Riverside Villa / Lavendish Hotel"
+                    ]
+                },
+                {
+                    "location": "Nuwara Eliya",
+                    "activities": [
+                        "Royal Botanical Garden",
+                        "Ambuluwawa Tower",
+                        "Ramboda Falls & Labookellie Tea Factory",
+                        "Check-in: Thuruliya Hotel / Oak Ray Tea Bush"
+                    ]
+                },
+                {
+                    "location": "Ella",
+                    "activities": [
+                        "Nine Arch Bridge & Flying Ravana",
+                        "Ella Swing & Secret Waterfall",
+                        "Sri Lankan Cooking Class",
+                        "Check-in: Nine Arch Lodge / Moi Ella"
+                    ]
+                },
+                {
+                    "location": "Yala",
+                    "activities": [
+                        "Lipton's Seat View Point",
+                        "Buduruwagala Temple & Tissa Wewa Lake",
+                        "Diyaluma Falls",
+                        "Check-in: Grand Yala Hotel / Farm Villa by Heritage"
+                    ]
+                },
+                {
+                    "location": "Mirissa",
+                    "activities": [
+                        "Yala National Park Safari",
+                        "Kirinda Temple & Beach",
+                        "Mirissa Coconut Tree Hill",
+                        "Check-in: Windy Garden Hotel / Mandara Resort"
+                    ]
+                },
+                {
+                    "location": "Galle & Departure",
+                    "activities": [
+                        "Sea Turtle Hatchery",
+                        "Stilt Fishermen (Koggala)",
+                        "Galle Fort",
+                        "Unawatuna Beach",
+                        "End Tour"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "title": "10-Day Sri Lanka Journey",
+            "description": "Nature, culture, adventure and beautiful beaches. Package prices are per group in USD.",
+            "prices": {
+                "2 persons": 1100,
+                "4 persons": 1600,
+                "6 persons": 1800
+            },
+            "days": [
+                {
+                    "location": "Sigiriya",
+                    "activities": [
+                        "Arrive at Colombo Airport",
+                        "Dambulla Cave Temple",
+                        "Check in: Hotel Sigiriya",
+                        "Lion Rock Kingdom"
+                    ]
+                },
+                {
+                    "location": "Sigiriya",
+                    "activities": [
+                        "Sigiriya Village Safari",
+                        "Minneriya National Park"
+                    ]
+                },
+                {
+                    "location": "Kandy",
+                    "activities": [
+                        "Matale Spice Garden",
+                        "Check in: Grand Kandyan Hotel",
+                        "Kandy Gem Museum",
+                        "Temple of the Tooth"
+                    ]
+                },
+                {
+                    "location": "Nuwara Eliya",
+                    "activities": [
+                        "Waterfalls and tea plantations",
+                        "Check in: Araliya Red Hotel"
+                    ]
+                },
+                {
+                    "location": "Nuwara Eliya",
+                    "activities": [
+                        "Horton Place (as listed in the itinerary poster)",
+                        "Gregory Lake"
+                    ]
+                },
+                {
+                    "location": "Ella",
+                    "activities": [
+                        "Train ride to Ella",
+                        "Check in: EKHO",
+                        "Ravana Pool Club Zip Line"
+                    ]
+                },
+                {
+                    "location": "Ella and Yala",
+                    "activities": [
+                        "Nine Arch Bridge",
+                        "Check in: Yala DoubleTree by Hilton",
+                        "Yala National Park Jeep Safari"
+                    ]
+                },
+                {
+                    "location": "Galle",
+                    "activities": [
+                        "Travel to South Beach",
+                        "Check in: Araliya Beach Hotel"
+                    ]
+                },
+                {
+                    "location": "Mirissa",
+                    "activities": [
+                        "Whale watching",
+                        "Beach day"
+                    ]
+                },
+                {
+                    "location": "Colombo",
+                    "activities": [
+                        "Colombo city tour",
+                        "Airport transfer for departure"
+                    ]
+                }
+            ]
+        }
+    ]
+}
