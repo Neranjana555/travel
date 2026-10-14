@@ -1,0 +1,5 @@
+DirectoryIndex index.php
+Options -Indexes
+<FilesMatch "^(config\.php|app\.php|seed\.json|README\.md|seed-builder\.php|verify\.php|router\.php|tour-section\.php|review-section\.php|site-data\.php|admin-data\.php|admin-tours\.php|contact-data\.php|tour-posters\.php)$">
+Require all denied
+</FilesMatch>

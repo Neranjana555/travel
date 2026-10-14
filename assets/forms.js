@@ -1,0 +1,17 @@
+const csrf = document.querySelector('meta[name="csrf-token"]').content;
+for (const [id,kind] of [['bookingForm','enquiry'],['newsletterForm','newsletter']]) {
+ const form=document.getElementById(id); if(!form) continue;
+ if(kind==='newsletter') form.querySelector('input[type=email]').name='email';
+ const trap=document.createElement('input'); trap.name='website'; trap.tabIndex=-1; trap.autocomplete='off'; trap.className='honeypot'; trap.setAttribute('aria-hidden','true'); form.append(trap);
+ let status=form.querySelector('#form-message'); if(!status) { status=document.createElement('p'); form.append(status); } status.setAttribute('role','status');
+ form.addEventListener('submit',async event=>{ event.preventDefault(); const button=form.querySelector('button'); button.disabled=true; status.textContent='Sending…'; const data=new FormData(form); data.set('csrf',csrf); data.set('kind',kind);
+ try { const response=await fetch('contact.php',{method:'POST',body:data}); const result=await response.json(); status.textContent=result.message; if(response.ok) form.reset(); } catch { status.textContent='Unable to connect. Please try again or contact us on WhatsApp.'; } finally { button.disabled=false; }
+ });
+}
+document.querySelectorAll('.tour-tab').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('.tour-tab').forEach(b=>{b.classList.toggle('selected',b===button);b.setAttribute('aria-pressed',b===button?'true':'false');});document.querySelectorAll('.tour-panel').forEach(p=>p.hidden=p.id!==button.dataset.tour);}));
+
+document.querySelectorAll('#bookingForm input,#bookingForm textarea,#newsletterForm input').forEach(field=>{if(field.placeholder) field.setAttribute('aria-label',field.placeholder);});
+document.addEventListener('keydown',event=>{if(event.key==='Escape') document.getElementById('lightbox')?.classList.remove('active');});
+const toggle=document.getElementById('hamburger');const menu=document.getElementById('nav-menu');
+if(toggle&&menu){const backdrop=document.createElement('div');backdrop.className='menu-backdrop';document.body.append(backdrop);function sync(){const open=menu.classList.contains('active');toggle.setAttribute('aria-expanded',String(open));toggle.setAttribute('aria-label',open?'Close navigation':'Open navigation');document.body.classList.toggle('menu-open',open);backdrop.classList.toggle('open',open);}new MutationObserver(sync).observe(menu,{attributes:true,attributeFilter:['class']});function close(){menu.classList.remove('active');toggle.querySelector('i').className='fas fa-bars';sync();}backdrop.addEventListener('click',close);menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>queueMicrotask(sync)));document.addEventListener('keydown',event=>{if(event.key==='Escape'){close();toggle.focus();}if(event.key==='Tab'&&menu.classList.contains('active')){const links=[...menu.querySelectorAll('a')];if(!event.shiftKey&&document.activeElement===links.at(-1)){event.preventDefault();toggle.focus();}else if(event.shiftKey&&document.activeElement===toggle){event.preventDefault();links.at(-1).focus();}}});window.matchMedia('(min-width:993px)').addEventListener('change',event=>{if(event.matches)close();});sync();}
+document.querySelectorAll('.gallery-item').forEach(item=>{item.tabIndex=0;item.setAttribute('role','button');item.setAttribute('aria-label','View photo: '+item.querySelector('img').alt);item.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();item.click();}});});
